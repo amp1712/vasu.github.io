@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, 
+        initial-scale=1.0" />
+  
+  
+  
+    <style>
+        #clock {
+            font-size: 30px;
+            color: green;
+            width: 200px;
+            margin: 50px;
+            text-align: center;
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="Logo" ><img src="https://aresroboticsnsut.com/img/Picture1.webp" alt="A.R.E.S" style="width:25%" style="height:25%"></div> 
+   <div class = "ARES">A.R.E.S Robotics</div> 
+  <div class = "nav_tag">2020UIC3600</div> 
+  
+  <ul>
+    <li><a class="active1" href="https://aresroboticsnsut.com/#about">Home</a></li>
+    <li><a class="active2"  href="https://aresroboticsnsut.com/#portfolio">Team</a></li>
+    <li><a class="active3" href="http://blog.aresroboticsnsut.com/">Blog</a></li>
+  </ul>
+  <div id="clock"> 08:10:45 </div>
+  
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script>
+
+
+    <header>
+        
+        <h3> Autonomous Rover using Embedded Systems Robotics</h3>
+        
+        <p class="line"> Team ARES Robotics is a group of young engineering undergraduates from Netaji Subhash University of Technology,highly interested in the field of Robotics and Artificial Intelligence and having an aim of designing and fabricating a fully functional Rover that can be used in the early exploration of the Mars.</p>
+        <br>
+        <button class="learn" onclick="document.location ='https://aresroboticsnsut.com/docs/Brochure.pdf'"> More About A.R.E.S</button>
+    </header>
+    <br><br>
+    <input type="checkbox" id="switch" class="checkbox" > 
+        <label for="switch" class="toggle" onclick="myFunction()"> 
+            
+        </label>
+        <br>
+        <p>swipe right to dark mode</p>
+        
+        <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+
+            </script> 
+    <br><br>
+    <div class="card1">
+        <img src="https://th.bing.com/th/id/OIP.GQac9kx7hegP2sXE4kwxbAHaEK?w=333&h=181&c=7&o=5&dpr=1.2&pid=1.7" alt="Tech_Dept" style="width:50% " style="height:50%";>
+        <div class="container">
+          <h4><b> <center> SOFTWARE DEPARTMENT</center></b></h4>
+          <p>Our Software Department develops the processes for the operations of our rover. The subteam constructs subroutines for autonomous traversal, terrain mapping, motor controls, arm manipulation, remote communication, and data analysis.</p>
+          <p><br>
+           <center> <button class="see">See More</button></center>
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="card2">
+        <img src="https://www.york.ac.uk/media/study/courses/undergraduate/electronics/EE-comp-BEng-ind.jpg" alt="Content_Dept" style="width:50%" style="height:50%";>
+        <div class="container">
+          <h4><b>ELECTRONICS DEPARTMENT</b></h4>
+          <p>Our Electronics Department provides power for the rovers, with wire management, power vigilance, safety, PCB design, and hardware organization. Their eletrical expertise supplies the other teams with the freedom to develop brilliant solutions.</p>
+          <p><br>
+          <center><button class="see" >See More</button>
+       </center>
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="card3">
+        <img src="https://th.bing.com/th/id/Rd37066c3018c6e3e1b1aaf5dfd732010?rik=V5qDkVE5B4E40A&riu=http%3a%2f%2fthespiritscience.net%2fwp-content%2fuploads%2f2014%2f03%2fDNA-integrative-672x372.jpg&ehk=a0Gov8Ce618MIcHU4%2bWWzZt5%2bC0dyuFJH6BvTk6auIE%3d&risl=&pid=ImgRaw" alt="Videoediting_Dept" style="width:50%" style="height: 50%";>
+        <div class="container">
+          <h4><b>SCIENCE DEPARTMENT</b></h4>
+          <p>Our science team cooperates heavily with other substeams to develop the theories and methods for determining the prescence of extraterrestrial life. We employ theoritical and experimental techniques from astrobiology such as spectroscopy, chemical analysis, and microbiology to analyze soil for the presence of extinct or extant life.</p>
+          <p><br>
+              <center><button class="see">See More</button></center>
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="card4">
+        <img src="https://kissflow.com/wp-content/uploads/2019/11/Feature-Image-Business-Collaboration.jpg" alt="Business_Dept" style="width:50%" style="height: 50%";>
+        <div class="container">
+          <h4><b>BUSINESS DEPARTMENT</b></h4>
+          <p>Our business department plays an important part in the ARES mission. It records the expenses and contributes in sponsoring all the initiatives taken up by the team. It also handles documentation, finances and outreach for the whole team.They handle all the treasury, which plays an vital role in fulfilling our Teams facilities</p>
+          <p><br>
+              <center><button class="see" >See More</button></center>
+          </p>
+        </div>
+      </div>
+      <br><br>
+      <div class="card5">
+        <img src="https://cdn.hawkridgesys.com/wp-content/uploads/composer-tech-comms-solidworks-1024x576.jpg" alt="Mechanical_Dept" style="width:50%" style="height: 50%";>
+        <div class="container">
+         <center><h4><b>MECHANICAL DEPARTMENT</b></h4></center>
+          <p>Our Mechanical Department develops all mechanical aspects of the rover: the drive system, chassis, arm, propulsions, hydraulics, pneumatics and scientific devices. The reliablilty and performance of the mechincal systems is the bedrock for all operations of the rover.</p>
+          <p><br>
+              <center><button class="see">See More</button></center>
+          </p>
+        </div>
+      </div>
+     
+        
+        <br><br> 
+      <div class="rover"><center><h2>OUR ROVERS</h2></center>    </div>
+      <div class="card1">
+        <img src="https://aresroboticsnsut.com/titan/resources/img/titan-2018.webp" alt="titan" style="width:50%" style="height: 50%";>
+        <div class="container"> <br><br>
+         <center><h4><b>TITAN </b></h4></center> <br>
+          <p><br> <br>
+              <center><button class="see" onclick="document.location='https://aresroboticsnsut.com/titan/titan'">See More</button></center>
+          </p>
+          <br> <br>
+          </div>
+      </div> <br><br>
+        <div class="card1">
+        <img src="https://aresroboticsnsut.com/atom-i/resources/img/atom-1.webp" alt="Atom 1.0" style="width:50%" style="height: 50%";>
+        <div class="container"> <br><br>
+         <center><h4><b>ATOM 1.0 </b></h4></center> <br>
+          <p>  
+            
+          </p>
+          <p><br> <br>
+              <center><button class="see" onclick="document.location='https://aresroboticsnsut.com/atom-i/atom-i'">See More</button></center>
+          </p>
+        </div>
+      </div> <br><br>
+           
+            
+        <div class="card1">
+        <img src="https://aresroboticsnsut.com/atom-ii/resources/img/7.webp" alt="Atom 2.0" style="width:50%" style="height: 50%";>
+        <div class="container"> <br><br>
+         <center><h4><b>ATOM 2.0 </b></h4></center> <br>
+          <p>  
+            
+          </p>
+          <p><br> <br>
+              <center><button class="see" onclick="document.location='https://aresroboticsnsut.com/atom-ii/atom-ii'" >See More</button></center>
+          </p>
+        </div>
+      </div> <br><br>
+      <div class="rover"><center> A.R.E.S TOUR</center></div><br><br>
+            
+               <div class="tour"><h3>Take a tour of our Society..</h3>
+                 Team Ares is an undergraduate multi-disciplinary student team of space aficionados from Netaji Subhas Institute Of Technology (NSIT) working to formulate, design and fabricate a rover that can be put to use in early exploration of Mars. </p></div>
+                 <br><br>
+                 <div class="video"> <center><iframe  width="440" height="370" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faresmarsrover%2Fvideos%2F634222057343243%2F&show_text=0&width=560" width="560" height="308" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></center>
+
+</div>       
+
+
+
+            <br><br>
+            <footer>
+                <h2>GET IN TOUCH WITH US RIGHT NOW!</h2>
+                <p><a class="gradient-button gradient-button" onclick="document.location='https://contact.vasupal1.repl.co/'">Contact Us</a></p>
+            </footer>
+    
+</body>
+ 
+  
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script>
+</html>
